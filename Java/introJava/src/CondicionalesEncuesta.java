@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Valentin
+ * @author Valentino
  */
 public class CondicionalesEncuesta {
 
@@ -20,7 +20,36 @@ public class CondicionalesEncuesta {
         int opinion;
         Scanner leer = new Scanner(System.in);
         System.out.println("Clasifique del 1 al 5 estrellas!");
-        opinion = 
+        opinion = leer.nextInt();
+        
+        if (opinion >= 1 && opinion <= 5) {
+            
+            switch (opinion){
+                case 1: 
+                    System.out.println("1");
+                    break;
+                case 2: 
+                    System.out.println("2");
+                    break;
+                case 3: 
+                    System.out.println("3");
+                    break;
+                case 4: 
+                    System.out.println("4");
+                    break;
+                case 5:
+                    System.out.println("5");
+                    break;
+            }
+        } else if (opinion < 0) {
+            System.out.println("Opinion negativa???");
+            
+        } else if (opinion == 0) {
+            System.out.println("0??");
+        } else{
+            System.out.println("Se te fue de la mano compa");
+        }
+        
     }
     
 }
