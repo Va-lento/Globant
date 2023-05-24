@@ -49,7 +49,7 @@ public class CondicionalesEncuesta {
         } else{
             System.out.println("Se te fue de la mano compa");
         }
-        
+        System.out.println("Chau");
     }
     
 }
