@@ -26,19 +26,19 @@ public class CondicionalesEncuesta {
             
             switch (opinion){
                 case 1: 
-                    System.out.println("1");
+                    System.out.println("Tu puntuacion fue: 1");
                     break;
                 case 2: 
-                    System.out.println("2");
+                    System.out.println("Tu puntuacion fue: 2");
                     break;
                 case 3: 
-                    System.out.println("3");
+                    System.out.println("Tu puntuacion fue: 3");
                     break;
                 case 4: 
-                    System.out.println("4");
+                    System.out.println("Tu puntuacion fue: 4");
                     break;
                 case 5:
-                    System.out.println("5");
+                    System.out.println("Tu puntuacion fue: 5");
                     break;
             }
         } else if (opinion < 0) {
@@ -49,7 +49,7 @@ public class CondicionalesEncuesta {
         } else{
             System.out.println("Se te fue de la mano compa");
         }
-        System.out.println("Chau");
+        System.out.println("Chau compa");
     }
     
 }
