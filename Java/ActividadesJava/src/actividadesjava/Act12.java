@@ -39,12 +39,14 @@ public class Act12 {
         contador = 0;
         System.out.println("Bienvenido al dispositivo RS232");
           System.out.println("Por favor ingrese una cadena valida, recuerde que debe comenzar con X y terminar con O");
+        System.out.println();
         System.out.println("Si desea salir ingrese '&&&&&' ");
         do {            
         cadena = lector.nextLine();
         if ((cadena.length()== 5) && (cadena.substring(0, 1).equalsIgnoreCase("X") && (cadena.substring(4,5).equalsIgnoreCase("O")))){
             contador = contador +1;
             System.out.println("Valor valido! Ingrese otro");
+            System.out.println(cadena.charAt(4));
         } else if("&&&&&".equals(cadena)){
             break;
         } 
