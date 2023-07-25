@@ -69,5 +69,37 @@ public class Persona {
         this.altura = altura;
     }
     
+    //Calculo el peso ideal de la persona
+    public static void calcularIMC(double peso, double altura){
+        double pesoIdeal = (peso/(altura*altura));
+        int retorno = 0;
+        if (pesoIdeal<20){
+            System.out.println("La persona se encuentra debajo de su peso ideal");
+            retorno = -1;
+            
+        } if ((pesoIdeal>=20) || (pesoIdeal<=25)){
+            System.out.println("La persona se encuentra dentro de su peso ideal");
+            retorno = 0;
+            
+        } if (pesoIdeal>25){
+            System.out.println("La persona se encuentra por encima de su peso ideal");
+            retorno = 1;
+            
+        }   
+        
+    }
     
+    //Calcular si es mayor de edad
+    public static boolean calcularMayorEdad(int edad){
+        boolean esMayor = false;
+        if (edad>=18){
+            esMayor = true;
+        }
+        if (esMayor){
+            System.out.println("La persona es mayor de edad !!");
+        } else{
+            System.out.println("La persona es menor de edad");
+        }
+        return esMayor;
+    }
 }

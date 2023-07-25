@@ -30,9 +30,9 @@ public class PersonaService {
             sexo = leer.next().toUpperCase();
         }
         random.setSexo(sexo);
-        System.out.println("Ingrese la altura");
+        System.out.println("Ingrese la altura (metros)");
         random.setAltura(leer.nextDouble());
-        System.out.println("Ingrese el peso");
+        System.out.println("Ingrese el peso (kg)");
         random.setPeso(leer.nextDouble());
         System.out.println("Gracias! Se completo la planilla de "+ random.getNombre());
         return random;

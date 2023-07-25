@@ -5,6 +5,7 @@
 */
 package ejercicio7;
 
+import Entidades.Persona;
 import Servicio.PersonaService;
 
 
@@ -20,7 +21,13 @@ public class Ejercicio7 {
     public static void main(String[] args) {
         System.out.println("Buenos dias! Vamos a iniciar una Persona!");
         PersonaService ps = new PersonaService();
-        ps.crearPersona();
+        for (int i = 0; i < 4; i++) {
+            Persona p1 = ps.crearPersona();
+            Persona.calcularIMC(p1.getPeso(),p1.getAltura());
+            Persona.calcularMayorEdad(p1.getEdad());
+            
+        }
+        
     }
     
     
