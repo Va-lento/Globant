@@ -52,6 +52,7 @@ public class ColeccionesEjer1RazasDePerros {
             do{
                 System.out.println("Que raza quiere eliminar");
                 String razaAeliminar = scan.nextLine();
+                
                 Iterator<String> it = razasPerros.iterator();
                 
                 while(it.hasNext()){
