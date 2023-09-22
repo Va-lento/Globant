@@ -17,7 +17,7 @@ public class Act7 {
      */
     /*
     Consigna
-    Crear un programa que pida una frase y si esa frase es igual a “eureka” el programa
+    Crear un programa que pida una frase y si esa frase es igual a “eureka" el programa
     pondrá un mensaje de Correcto, sino mostrará un mensaje de Incorrecto.
     Nota: investigar la función equals() en Java.
     */

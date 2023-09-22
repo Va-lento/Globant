@@ -24,7 +24,7 @@ public class Act12 {
     ser X y el último tiene que ser una O.
     
     Las secuencias leídas que respeten el formato se consideran correctas, la secuencia
-    especial “&&&&&” marca el final de los envíos (llamémosla FDE), y toda secuencia
+    especial “&&&&&" marca el final de los envíos (llamémosla FDE), y toda secuencia
     distinta de FDE, que no respete el formato se considera incorrecta.
     
     Al finalizar el proceso, se imprime un informe indicando la cantidad de lecturas correctas
